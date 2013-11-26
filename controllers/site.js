@@ -4,11 +4,6 @@
  * Copyright(c) 2012 muyuan
  * MIT Licensed
  */
-
-/**
- * Module dependencies.
- */
-
 var User = require('../proxy').User;
 var Topic = require('../proxy').Topic;
 var Tag = require('../proxy').Tag;

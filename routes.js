@@ -3,11 +3,6 @@
  * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
  * MIT Licensed
  */
-
-/**
- * Module dependencies.
- */
-
 var sign = require('./controllers/sign');
 var site = require('./controllers/site');
 var user = require('./controllers/user');
