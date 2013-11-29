@@ -23,8 +23,8 @@ module.exports = function (app) {
   app.get('/', site.index);
 
   // sign up, login, logout
-  app.get('/signup', sign.showSignup);
-  app.post('/signup', sign.signup);
+  app.get('/signup', sign.showSignup); // 跳转到注册页面
+  app.post('/signup', sign.signup); // 注册操作
   app.get('/signout', sign.signout);
   app.get('/signin', sign.showLogin);
   app.post('/signin', sign.login);

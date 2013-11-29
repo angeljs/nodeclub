@@ -8,11 +8,16 @@ var User = require('../proxy').User;
 var Message = require('../proxy').Message;
 var mail = require('../services/mail');
 
-//sign up
+/**
+ * 跳转到注册页面
+ */
 exports.showSignup = function (req, res) {
   res.render('sign/signup');
 };
 
+/**
+ * 注册
+ */
 exports.signup = function (req, res, next) {
   var name = sanitize(req.body.name).trim();
   name = sanitize(name).xss();
